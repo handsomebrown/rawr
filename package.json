@@ -1,0 +1,63 @@
+{
+	"name": "rawr",
+	"version": "0.1.0",
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.cjs.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": ["dist"],
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"publish": "tsc -b && vite build && npm publish --access public",
+		"fmt:lint": "pnpm biome check --write .",
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/handsomebrown/rawr.git"
+	},
+	"author": "Shavonn Brown",
+	"description": "RRule picker for my projects",
+	"peerDependencies": {
+		"react": ">=18 || >=19",
+		"react-dom": ">=18 || >=19",
+		"tailwindcss": ">=4.0.0-beta.8"
+	},
+	"dependencies": {
+		"@handsomebrown/stencil": "^1.0.0",
+		"dayjs": "^1.11.13",
+		"rrule": "^2.8.1",
+		"zustand": "^5.0.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@storybook/addon-essentials": "^8.4.7",
+		"@storybook/addon-interactions": "^8.4.7",
+		"@storybook/blocks": "^8.4.7",
+		"@storybook/preview-api": "^8.4.7",
+		"@storybook/react": "^8.4.7",
+		"@storybook/react-vite": "^8.4.7",
+		"@tailwindcss/vite": "4.0.0-beta.8",
+		"@types/node": "^22.10.3",
+		"@types/react": "^19.0.2",
+		"@types/react-dom": "^19.0.2",
+		"@vitejs/plugin-react-swc": "^3.7.2",
+		"storybook": "^8.4.7",
+		"terser": "^5.37.0",
+		"typescript": "^5.7.2",
+		"vite": "^6.0.6",
+		"vite-plugin-dts": "^4.4.0",
+		"vite-plugin-lib-inject-css": "^2.2.0"
+	}
+}
