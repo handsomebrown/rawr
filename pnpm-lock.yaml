@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@handsomebrown/stencil':
-        specifier: ^1.0.0
-        version: 1.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.0-beta.8)
+        specifier: ^1.0.1
+        version: 1.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.0-beta.8)
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -443,8 +443,8 @@ packages:
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
 
-  '@handsomebrown/stencil@1.0.0':
-    resolution: {integrity: sha512-pI+3Ys/081TPZ9W8OgPPmwtX7WfvyqXiEHuLL+xLZ4dEC89DOyxzaH6lpE5qhnhIHxdfSQlKYbXuYab5xsAeYg==}
+  '@handsomebrown/stencil@1.0.1':
+    resolution: {integrity: sha512-kEs5D9waBUcQRmiDV98XOCJoDQRcDAbcAUCy106dhycAFH3VE0MEuDTam6BgPzY5sdPIuLefVggs+/XO1mWUrQ==}
     peerDependencies:
       react: '>=18 || >=19'
       react-dom: '>=18 || >=19'
@@ -2324,7 +2324,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.8': {}
 
-  '@handsomebrown/stencil@1.0.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.0-beta.8)':
+  '@handsomebrown/stencil@1.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@4.0.0-beta.8)':
     dependencies:
       '@headlessui/react': 2.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
